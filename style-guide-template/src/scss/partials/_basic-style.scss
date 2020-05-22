@@ -459,65 +459,6 @@ section {
     padding: 0.6em 0;
   }
 
-  li:nth-of-type(1) .cd-color-swatch {
-    background: $color-1;
-
-    &::before {
-      background: lighten($color-1, 5%);
-    }
-
-    &::after {
-      background: darken($color-1, 5%);
-    }
-  }
-
-  li:nth-of-type(2) .cd-color-swatch {
-    background: $color-2;
-
-    &::before {
-      background: lighten($color-2, 5%);
-    }
-
-    &::after {
-      background: darken($color-2, 5%);
-    }
-  }
-
-  li:nth-of-type(3) .cd-color-swatch {
-    background: $color-3;
-
-    &::before {
-      background: lighten($color-3, 5%);
-    }
-
-    &::after {
-      background: darken($color-3, 5%);
-    }
-  }
-
-  li:nth-of-type(4) .cd-color-swatch {
-    background: $color-4;
-
-    &::before {
-      background: lighten($color-4, 5%);
-    }
-
-    &::after {
-      background: darken($color-4, 5%);
-    }
-  }
-
-  li:nth-of-type(5) .cd-color-swatch {
-    background: $color-5;
-
-    &::before {
-      background: lighten($color-5, 5%);
-    }
-
-    &::after {
-      background: darken($color-5, 5%);
-    }
-  }
 
   @include MQ(S) {
     li {
@@ -552,8 +493,8 @@ section {
 
 .cd-typography {
   h1::before {
-    content: "Aa - ";
-    color: $color-1;
+    content: "Aa -  ";
+    color: $color-7;
   }
 }
 
