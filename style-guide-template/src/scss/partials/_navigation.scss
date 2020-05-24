@@ -1,0 +1,28 @@
+.cd-navigation {
+}
+
+.cd-navigation .cd-box {
+  font-family: $third-font;
+  background-color: #2f8886;
+  max-width: 50%;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 10rem;
+  h3 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    padding: 2rem 0;
+  }
+
+  nav ul li {
+    padding: 1rem 0;
+  }
+  a {
+    color: white;
+    font-size: 1.7rem;
+  }
+  > div {
+    margin-top: 4rem;
+  }
+}
