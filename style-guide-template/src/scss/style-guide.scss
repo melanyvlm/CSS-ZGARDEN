@@ -4,6 +4,7 @@
 @import "partials/icons";
 @import "partials/colors";
 @import "partials/typography";
+@import "partials/navigation";
 @import "partials/branding";
 @import "partials/buttons";
 // color palette - these colors will be the color swatches of the Colors section
@@ -22,7 +23,7 @@ $alert: $color-3; // red
 // fonts
 $primary-font: "Merriweather", serif;
 $secondary-font: "Open Sans", sans-serif;
-$third-font: 'Libre Franklin', sans-serif;
+$third-font: "Libre Franklin", sans-serif;
 
 /* --------------------------------
 
