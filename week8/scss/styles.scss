@@ -1,6 +1,72 @@
 @import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
 
 // Mei - The Road , About , Hero
+$S: 768px;
+$M: 1024px;
+$L: 1600px;
+$green: #2F8886;
+$black:#333333;
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+// Headings
+
+header {
+    background-image: url(../img/hero.png);
+    padding: 2em;
+    color: white;
+
+    h1 {
+        font-size: 64px;
+    }
+
+    @media (min-width: 768px) {
+        height: 658px;
+        padding: 3em 5em 0 5em;
+
+    }
+}
+
+.summary {
+    display: none;
+}
+
+.preamble {
+    padding: 3em 2em;
+
+    h3 {
+        color: $green;
+        font-size: 30px;
+    }
+
+    p {
+        color: $black;
+    }
+
+    @media (min-width: 768px) {
+        padding: 3em 5em;
+    }
+}
+
+.main {
+    .explanation {
+        background-color: #FFFAF2;
+        padding: 3em 2em;
+
+        @media (min-width: 768px) {
+            padding: 3em 5em;
+        }
+
+        h3 {
+            color: $green;
+            font-size: 30px;
+        }
+    }
+}
+// End ...
 
 // Cristhians - Participation , Benefits & Requirements , By David
 
