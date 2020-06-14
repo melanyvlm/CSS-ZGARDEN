@@ -158,14 +158,6 @@ header {
   }
 }
 // Hector - Footer , Asidebar
-
-.sidebar{
-
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
 footer{
   display: flex;
   flex-wrap: nowrap;
@@ -242,11 +234,13 @@ footer{
 }
 
 .design-selection{
-  grid-area: selection;
-  justify-self: center;
+  grid-area: selection; 
   color: $black;
   padding: 2em;
-
+  @media (min-width: 768px) {
+    justify-self: center;
+                
+  }
   h3:before {
     content: "\2713" ;
     padding-right: 10px;
