@@ -169,8 +169,9 @@ header {
 footer{
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 3em 2em;
+
   a{
 
     padding: 1.5em;
@@ -245,10 +246,22 @@ footer{
   justify-self: center;
   color: $black;
   padding: 2em;
+
+  h3:before {
+    content: "\2713" ;
+    padding-right: 10px;
+  
+  }
+
 }
 
 .design-archives{
   grid-area: archives;
+  h3:before {
+    content: "\1F4C1" ;
+    padding-right: 10px;
+  
+  }
 }
 
 .zen-resources{
@@ -256,6 +269,11 @@ footer{
 
   h3{
     margin-top: 1em;
+  }
+  h3:before {
+    content: "\2706" ;
+    padding-right: 10px;
+  
   }
 }
 
