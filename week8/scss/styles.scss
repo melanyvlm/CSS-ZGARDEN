@@ -215,18 +215,22 @@ footer{
       color: $black;
       margin-bottom: 1em;
     }
+
     ul li{
       padding: 0.5em 0;
     }
+
 
     a {
       text-decoration: none;
       color: $black;
     
     }
+
     abbr{
       text-decoration: none;
     }
+
 
     li > a:first-child{
       font-weight: bolder;
@@ -236,11 +240,13 @@ footer{
 .design-selection{
   grid-area: selection; 
   color: $black;
-  padding: 2em;
+  padding: 2em 4em;
+
   @media (min-width: 768px) {
     justify-self: center;
                 
   }
+
   h3:before {
     content: "\2713" ;
     padding-right: 10px;
@@ -264,6 +270,7 @@ footer{
   h3{
     margin-top: 1em;
   }
+
   h3:before {
     content: "\2706" ;
     padding-right: 10px;
