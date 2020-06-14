@@ -70,3 +70,117 @@ header {
 // Cristhians - Participation , Benefits & Requirements , By David
 
 // Hector - Footer , Asidebar
+
+.sidebar{
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+footer{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 3em 2em;
+  a{
+
+    padding: 1.5em;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: transparent; 
+
+  }
+}
+
+.zen-validate-html{
+  background-image: url(../icons/html.png);
+
+}
+.zen-validate-css{
+  background-image: url(../icons/css.png); 
+
+}
+.zen-license{
+  background-image: url(../icons/cc.png);
+
+}
+.zen-accessibility{
+  background-image: url(../icons/github.png);
+ 
+}
+.zen-github{
+  background-image: url(../icons/github.png);
+  
+}
+
+.wrapper{
+
+  display: grid;
+  grid-template-areas: "selection"
+                        "archives"   
+                        "resources" ;
+  width: 100%;
+  @media (min-width: 768px) {
+    grid-template-areas: "selection   archives"
+                         "selection   resources" ;
+                
+  }
+
+    h3{
+      font-weight: bolder;
+      font-size: 30px;
+      color: $black;
+      margin-bottom: 1em;
+    }
+    ul li{
+      padding: 0.5em 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $black;
+    
+    }
+    abbr{
+      text-decoration: none;
+    }
+
+    li > a:first-child{
+      font-weight: bolder;
+    }
+}
+
+.design-selection{
+  grid-area: selection;
+  justify-self: center;
+  color: $black;
+  padding: 2em;
+}
+
+.design-archives{
+  grid-area: archives;
+}
+
+.zen-resources{
+  grid-area: resources;
+
+  h3{
+    margin-top: 1em;
+  }
+}
+
+.design-archives , .zen-resources{
+  padding: 2em 4em;
+  background-color: $green;
+  
+  a{
+    color: white;    
+  }
+
+  
+  h3{
+    color: white;
+  }
+}
