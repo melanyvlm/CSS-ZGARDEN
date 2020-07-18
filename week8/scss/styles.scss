@@ -20,6 +20,9 @@ header {
   background-image: url(../img/hero.png);
   padding: 2em;
   color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   h1 {
     font-size: 64px;
@@ -27,12 +30,12 @@ header {
 
   @media (min-width: 768px) {
     height: 658px;
-    padding: 3em 5em 0 5em;
+    padding: 4em 5em 0 5em;
   }
 }
 
 .summary {
-  display: none;
+  // display: none;
 }
 
 .preamble {
@@ -48,7 +51,7 @@ header {
   }
 
   @media (min-width: 768px) {
-    padding: 3em 5em;
+    padding: 4em 5em;
   }
 }
 
@@ -58,7 +61,7 @@ header {
     padding: 3em 2em;
 
     @media (min-width: 768px) {
-      padding: 3em 5em;
+      padding: 4em 5em;
     }
 
     h3 {
@@ -82,7 +85,7 @@ header {
   }
 
   @media (min-width: 768px) {
-    padding: 3em 5em;
+    padding: 4em 5em;
 
     background-image: url(../img/people-discussion.png);
     background-repeat: no-repeat;
@@ -107,7 +110,7 @@ header {
   }
 
   @media (min-width: 768px) {
-    padding: 3em 5em;
+    padding: 4em 5em;
 
     background-image: url(../img/BigShoesHero.png);
     background-repeat: no-repeat;
@@ -144,14 +147,14 @@ header {
   }
 
   @media (min-width: 768px) {
-    padding: 3em 5em 0;
+    padding: 4em 5em 0;
 
-    p {
-      border: 1px solid red;
-    }
+    // p {
+    //   border: 1px solid red;
+    // }
 
     p:last-child {
-      padding: 3em 5em;
+      padding: 4em 5em;
       margin-left: -5em;
       margin-right: -5em;
     }
