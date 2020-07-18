@@ -9,12 +9,23 @@ $green: #2f8886;
 $black: #333333;
 $soft-green: #e8f2f1;
 $soft-gray: #f5f5f5;
+$white:#ffff;
 
 body {
   font-family: "Work Sans", sans-serif;
+  font-size: 16px;
 }
 
 // Headings
+p {
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+h3 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
 
 header {
   background-image: url(../img/hero.png);
@@ -23,20 +34,95 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  height: 260px;
 
   h1 {
-    font-size: 64px;
+    font-size: 24px;
   }
 
-  @media (min-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  @media (min-width: $S) {
     height: 658px;
     padding: 4em 5em 0 5em;
+
+    h1 {
+      font-size: 64px;
+    }
   }
 }
 
 .summary {
+  padding: 2rem;
+  color: $white;
+
+  p:first-child {
+    display: none;
+  }
+
+  p:nth-child(2) {
+    padding-bottom: 1rem;
+  }
+
+  a {
+    color: $white;
+    border: 1px solid white;
+    padding: 1em 3em;
+    position: absolute;
+  }
+
   // display: none;
 }
+
+@media (min-width:$S) {
+  .summary {
+    padding: 0 5em;
+
+    p:nth-child(2) {
+      color: $white;
+      position: absolute;
+      top: 50%;
+    }
+
+
+
+    a:first-child {
+      left: 0;
+      top: 149%;
+      padding: 1.5rem 3rem;
+    }
+
+    a:nth-child(2) {
+
+      // left: 0;
+      left: 88%;
+      top: 149%;
+    }
+  }
+
+
+}
+
+@media (max-width:$S) {
+  .summary {
+    top: 8%;
+    position: absolute;
+  }
+
+  a:first-child {
+    left: 35%;
+    top: 75%;
+  }
+
+  a:nth-child(2) {
+    left: 37%;
+    top: 149%;
+  }
+
+}
+
 
 .preamble {
   padding: 3em 2em;
@@ -270,11 +356,47 @@ footer {
 
 .design-selection::after {
   display: block;
-  content: '';
-  transform: rotate(-35deg);
+  content: 'Choose One';
+  color: $white;
+  padding: 1rem 2rem;
   height: 50px;
-  background-color: red;
   width: 50px;
+  margin: 0 auto;
+  background-color: $green;
+  animation:
+    pulse 3s ease infinite alternate,
+    nudge 5s linear infinite alternate;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 60px solid $white;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    background-color: $green;
+  }
+
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes nudge {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(150px, 0);
+  }
+
+  80% {
+    transform: translate(-150px, 0);
+  }
 }
 
 .design-archives {
