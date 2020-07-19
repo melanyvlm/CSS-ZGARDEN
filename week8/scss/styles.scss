@@ -10,6 +10,7 @@ $black: #333333;
 $soft-green: #e8f2f1;
 $soft-gray: #f5f5f5;
 $white:#ffff;
+$aling-p: justify;
 
 body {
   font-family: "Work Sans", sans-serif;
@@ -20,6 +21,7 @@ body {
 p {
   font-size: 1rem;
   line-height: 20px;
+  padding-bottom: 1em;
 }
 
 h3 {
@@ -170,6 +172,7 @@ header {
 
   p {
     width: 100%;
+    text-align: $aling-p;
   }
 
   @media (min-width: 768px) {
@@ -178,7 +181,7 @@ header {
     background-image: url(../img/people-discussion.png);
     background-repeat: no-repeat;
     background-position: 85% 50%;
-    background-size: 40%;
+    background-size: 300px;
 
     p {
       width: 50%;
@@ -187,6 +190,8 @@ header {
 }
 
 .benefits {
+  background-color: #fffaf2;
+
   h3 {
     color: $green;
     font-size: 30px;
@@ -196,6 +201,7 @@ header {
 
   p {
     width: 100%;
+    text-align: $aling-p;
   }
 
   @media (min-width: 768px) {
@@ -204,7 +210,7 @@ header {
     background-image: url(../img/BigShoesHero.png);
     background-repeat: no-repeat;
     background-position: 15% 50%;
-    background-size: 30%;
+    background-size: 300px;
 
     h3,
     p {
@@ -225,11 +231,11 @@ header {
 
   p {
     width: 100%;
-    padding-bottom: 1em;
+    text-align: $aling-p;
   }
 
   p:last-child {
-    padding: 3em 2em;
+    padding: 4em 5em;
     margin-left: -2em;
     margin-right: -2em;
     background-color: $soft-gray;
