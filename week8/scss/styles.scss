@@ -270,8 +270,15 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     color: transparent;
+    transition: opacity .5s, transform .5s;
 
   }
+  a:hover {  
+    transition: opacity .5s, transform .5s;
+		transform: rotate(360deg) scale(1.2);
+		
+  }
+ 
 }
 
 .zen-validate-html {
@@ -290,7 +297,7 @@ footer {
 }
 
 .zen-accessibility {
-  background-image: url(../icons/github.png);
+  background-image: url(../icons/accessibility.png);
 
 }
 
@@ -351,8 +358,8 @@ footer {
 
   }
 
-  h3:before {
-    content: "\2713";
+  h3::before {   
+    content: "\1F50D";
     padding-right: 10px;
 
   }
@@ -423,7 +430,7 @@ footer {
   }
 
   h3:before {
-    content: "\2706";
+    content: "\1F4BB";
     padding-right: 10px;
 
   }
