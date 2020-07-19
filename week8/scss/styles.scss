@@ -235,7 +235,7 @@ header {
   }
 
   p:last-child {
-    padding: 4em 5em;
+    padding: 4em 2em 4em 5em;
     margin-left: -5em;
     margin-right: -5em;
     background-color: $soft-gray;
@@ -273,12 +273,13 @@ footer {
     transition: opacity .5s, transform .5s;
 
   }
-  a:hover {  
+
+  a:hover {
     transition: opacity .5s, transform .5s;
-		transform: rotate(360deg) scale(1.2);
-		
+    transform: rotate(360deg) scale(1.2);
+
   }
- 
+
 }
 
 .zen-validate-html {
@@ -358,7 +359,7 @@ footer {
 
   }
 
-  h3::before {   
+  h3::before {
     content: "\1F50D";
     padding-right: 10px;
 
